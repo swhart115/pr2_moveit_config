@@ -25,7 +25,7 @@ controller_list:
       - l_wrist_roll_joint
   - name: r_gripper_controller
     action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
+    type: pr2_mechanism_controllers/Pr2GripperController
     default: true
     joints:
       - r_gripper_l_finger_joint
@@ -34,7 +34,7 @@ controller_list:
       - r_gripper_joint
   - name: l_gripper_controller
     action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
+    type: pr2_mechanism_controllers/Pr2GripperController
     default: true
     joints:
       - l_gripper_l_finger_joint
